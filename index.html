@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Keep Eating</title>
+    <link href="css/position.css" rel="stylesheet" type="text/css">
+	<link href="css/imagen-trans.css" rel="stylesheet" type="text/css">
+	<link href="css/nav-form.css" rel="stylesheet" type="text/css">
+    <link href="css/bottom-arrow.css" rel="stylesheet" type="text/css">
+    <link href="css/return-to-top.css" rel="stylesheet" type="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/effects.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="header-left">
+			<a href=""><img class="logo" src="images/logo_sin.png" alt="Logo Keep Eating"/></a>
+		</div>
+        <div class="header-right">
+		<nav class="nav_head">
+			 <ul>
+				<li><a  href="#" target="_self"><img class="logo2" src="images/espanol.png" alt="Icona Idioma"/></a></li>
+			</ul>
+		  </nav>
+		</div>  
+    </header>
+  <div class="main-container">
+        <video id="myvideo" width="100%" autoplay loop muted controls>
+        	<source src="videos/presentation.mp4" type="video/mp4">
+        	Your browser does not support the video tag.
+        </video>
+        <nav id="nav_container">
+            <form id="nav_form" action="action_page.php">
+				<div class="title-form">
+					<h2 class="title-nav">ELIGE RESTAURANTE</h2>
+				</div>			
+                <div id="nav_first_line">
+				  <div class="city">
+						<p class="label"><label for="ciudad">DÓNDE IR:</label></p>
+						<input id="ciudad" type="text" placeholder="CIUDAD" name="city">
+                    </div>
+					<div class="date">
+						<p class="label"><label for="date">FECHA:</label></p>
+						<input id="date" type="date" name="day">
+					</div>
+					<div class="type">
+						<p class="label"><label for="gender">TIPO DE COCINA:</label></p>
+						<select id="gender" name="gender">
+							<option value="gender">OPCIONES GOURMET</option>
+							<option value="gender">FAST FOOD</option>
+							<option value="gender">COMIDA LOCAL</option>
+						</select>
+					</div>
+					<div class="send">
+						<input id="send" value="BÚSQUEDA" type="submit" class="button">
+					</div>
+				</div>
+              <div id="nav_second_line">
+                    <div id="range">
+                        <span id="range-title">CANTIDAD QUE DESEA INVERTIR:</span>
+                        <input class="rangeBar" type="range" name="budget" min="0" max="100" step="1" value="50">
+                        <div id="lbl_price"><span>5€</span><span>100€</span></div>
+                    </div>
+                    
+                </div>
+            </form>
+        </nav>
+        <a href="#endpage" id="arrow"><div class="arrow bounce"></div></a>
+	</div>
+    <div class="bottom-section" id="endpage">
+    	<div class="bottom-article">
+			<h3 class="title1">LIBRE E INDEPENDIENTE</h3>
+			<p>Se realizaron búsquedas en los restaurantes, bares y comida rápida, nos encontramos con las mejores opciones. Ahora colocar texto sólo parecen tener mucha información. Gratis.</p>
+		</div>
+        <div class="bottom-article">
+			<h3 class="title2">EL ÚNICO</h3>
+			<p>El único sitio que un solo clic se sugieren los mejores restaurantes de la ciudad donde se encuentra. Sólo tienes que elegir el restaurante y estas listo para salir.</p>
+		</div>
+			<div class="bottom-article">
+			<h3 class="title3">GANADOR</h3>
+			<p>La alimentación torreón ha ganado numerosos premios de Pero mejor sitio de la sugerencia de alimentos y se recomienda no sólo para aquellos que viajan con frecuencia, sino también por la CNN.</p>
+		</div>
+    </div>
+	<div class="bottom-section2">
+		<div class="main">
+			<div class="view view-fifth">
+				<img class="imagenT" src="images/pic1.png"/>
+				<div class="mask">
+					<h2>Nombre Restaurante</h2>
+					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					<a href="#" class="info">Seguir leyendo...</a>
+				</div>
+			</div>
+			<div class="view view-fifth">
+				<img class="imagenT" src="images/pic2.png"/>
+				<div class="mask">
+					<h2>Nombre Restaurante</h2>
+					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					<a href="#" class="info">Seguir leyendo...</a>
+				</div>
+			</div>
+			<div class="view view-fifth">
+				<img class="imagenT" src="images/pic3.png"/>
+				<div class="mask">
+					<h2>Nombre Restaurante</h2>
+					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					<a href="#" class="info">Seguir leyendo...</a>
+				</div>
+			</div>
+			<div class="view view-fifth">
+				<img class="imagenT" src="images/pic4.png"/>
+				<div class="mask">
+					<h2>Nombre Restaurante</h2>
+					<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+					<a href="#" class="info">Seguir leyendo...</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div>
+    	<!-- Return to Top -->
+        <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>        
+        
+        <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    </div>
+	<footer>
+    	<div id="top-footer">
+    		<div class="left-footer">
+				<h3>Manténgase al tanto</h3>
+			    <p>Conectar con nosotros y permanecer en el bucle</p>
+			    <div id="foot">
+					<!--Icona amb enllaç a Facebook-->
+					<a  href="https://www.facebook.es/" target="_blank" title="Facebook"><img class="logo1" src="images/facebook.png" alt="Logo Facebook"/></a>
+					<!--Icona amb enllaç a Twitter-->
+					<a  href="https://twitter.com/?lang=es" target="_blank" title="Twitter"><img class="logo1" src="images/twitter.png" alt="Logo Twitter"/></a>
+					<a  href="https://www.linkedin.com/" target="_blank" title="LinkdIn"><img class="logo1" src="images/rss.png" alt="Logo LinkdIn"/></a>
+					<!--Icona amb enllaç a Twitter-->
+					<a  href="https://plus.google.com/" target="_blank" title="Google+"><img class="logo1" src="images/goog.png" alt="Logo Google+"/></a>
+				</div>
+			</div>
+        	<div class="center-footer">
+				<a class="logo_wrapper" href=""><img class="logoFoot" src="images/logo_foot.png" alt="Logo Keep Eating"/></a>
+			</div>
+        	<div class="right-footer">
+				<h3>Newsletter</h3>
+				<p>Sé el primero en conocer nuestras ofertas y anuncios</p>
+				<form action="" method="post" id="newsletter"> 
+				<p>	<input id="email" type="email" name="email" value="NEWSLETTER" onBlur="if(this.value=='')this.value='NEWSLETTER'" onFocus="if(this.value=='NEWSLETTER')this.value=''"></p>
+				</form>
+			</div>
+        </div>
+    </footer>
+</body>
+</html>

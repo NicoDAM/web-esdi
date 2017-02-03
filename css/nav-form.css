@@ -1,0 +1,208 @@
+
+/*conté el form amb el menu de busqueda*/
+#nav_container {
+	margin-top: 4%; /* Determina la posicio vertical del nav*/ 
+	-webkit-align-self: center;
+	align-self: center;
+	background-color: transparent;
+	width: 65%;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	font-family:'brutal';
+	opacity:0.4;
+	-webkit-justify-content: space-between; /*Propietat que indica que es deixi espai entre els elements*/
+	justify-content: space-between;
+	align-content: center;
+}
+
+#nav_form {
+	-webkit-align-self: center;
+	align-self: center;
+	font-family: 'brutal';
+	color:white;
+	font-weight:bold;
+	font-size:1em;
+}
+
+.title-form {
+	color:white;
+}
+.title-nav {
+	text-align: center;
+	font-size:2.5em;
+	padding-bottom:2%;
+/*	color: #f7c805; */
+/*	text-shadow: rgb(255, 255, 255) 3px 2px 0px; */
+}
+
+#nav_first_line {
+	margin-bottom:2vh;	
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-flex-flow: row; /*Fluxe dels elements del contenidor */
+	flex-flow: row; /* Es defineix la direcció dels elements */
+	-webkit-justify-content: space-around; /*Propietat que indica que es deixi espai entre els elements*/
+	justify-content: space-around;
+}
+
+p.label {
+	padding-bottom:2%;
+}
+.send{
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-flex-flow: column; /*Fluxe dels elements del contenidor */
+	flex-flow: column; /* Es defineix la direcció dels elements */
+	-webkit-justify-content: center; /*Propietat que indica que es deixi espai entre els elements*/
+	justify-content: center;
+ }
+ 
+
+
+ #title {
+	 padding-bottom:1%;
+ }
+
+#ciudad {
+	padding: 6px 12px;
+	color: black;
+	letter-spacing: -0.02em;
+	border-radius: 3px;
+	font-size:1em;
+	width: 100%;
+}
+
+#date {
+	padding: 6px 12px;
+	color: #787878;
+	letter-spacing: -0.02em;
+	border-radius: 3px;
+	width: 100%;
+}
+
+#gender {
+	padding: 7px 12px;
+	color: #787878;
+	letter-spacing: -0.02em;
+	border-radius: 3px;
+	font-size:1em;
+}
+
+#nav_second_line{
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-flex-flow: row; /*Fluxe dels elements del contenidor */
+	flex-flow: row; /* Es defineix la direcció dels elements */
+	-webkit-justify-content: center; /*Propietat que indica que es deixi espai entre els elements*/
+	justify-content: center;
+}
+
+#lbl_price{
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-justify-content: space-between; /*Propietat que indica que es deixi espai entre els elements*/
+	justify-content: space-space-between;
+}
+	
+#range {
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-flex-flow: column wrap; /*Fluxe dels elements del contenidor */
+	flex-flow: column wrap; /* Es defineix la direcció dels elements */
+	-webkit-justify-content: space-between; /*Propietat que indica que es deixi espai entre els elements*/
+	justify-content: space-space-between;
+	color: white;
+}
+	
+#range-title{
+	font-size:1em;
+	text-align:left;
+	font-weight:bold;
+	padding-bottom:2%;
+}
+
+/*Estil range Bar*/
+
+input[type=range].rangeBar {
+	-webkit-appearance: none;
+	width: 70vh;
+	margin: 1vh 0vh;
+}
+
+input[type=range].rangeBar::-webkit-slider-runnable-track {
+	width: 50vh;
+	height: 1vh;
+	cursor: pointer;
+	background: #f7c805;
+	border: 0.2vh solid white;
+	box-shadow: rgb(255, 255, 255) 2px 2px 0px;
+}
+
+input[type=range].rangeBar::-webkit-slider-thumb {
+	border: 0.1vh solid white;
+	height: 4vh;
+	width:1.5vh;
+	border-radius: 0.1vh;
+	background: #f7c805;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -1.2vh;
+}
+ /*Estil del range compatible amb firefox*/
+input[type=range].rangeBar::-moz-range-track {
+	width: 50vh;
+	height: 1vh;
+	cursor: pointer;
+	background: white;
+	border: 0.2vh solid white;
+}
+
+input[type=range].rangeBar::-moz-range-thumb {
+	border: 0.1vh solid white;
+	height: 4vh;
+	width:1.5vh;
+	border-radius: 0.1vh;
+	background: #f7c805;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -1.2vh;
+}
+
+#lbl_price{
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-justify-content: space-between; /*Propietat que indica que es deixi espai entre els elements*/
+	justify-content: space-space-between;
+}
+
+#lbl_price > span{
+	padding:0.5vh;
+	font-size:1em;
+}
+	
+
+#send{
+	padding: 6px 18px;
+	letter-spacing: -0.02em;
+	border-radius: 3px;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0.4vh;
+	color: black;
+	font-size:1.2em;
+	font-style: bold;
+	background-color: #f7c805;
+	text-align: center;
+	margin-top:20%;
+	box-shadow: rgb(255, 255, 255) 3px 2px 0px;
+}
+
+#send {
+	position:relative;
+	top:0;
+	padding:4px;
+    transition: all .2s ease-in-out
+}
+
+#send:hover{top:-4px;box-shadow:0 4px 3px #999;}

@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Declaració de les fonts utilitzades, ubicades a la carpeta fonts*/
+@font-face { 
+    font-family: 'brutal';
+    src: url('../fonts/BrutalType.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quick';
+    src: url('../fonts/Quicksand-Bold.otf') format('opentype');
+	font-weight: normal;
+    font-style: bold;
+}
+
+/*fi header*/
+/*contenidor principal video-nav*/
+.main-containerQ{
+	background-image: url("../images/fons1.png") ; 
+	background-size:cover;
+    background-repeat: no-repeat; 
+	background-color: #ffc54e;
+	height: 600px;
+	padding-top: 2%;
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/
+	-webkit-flex-direction: column;
+	flex-direction: column; /*Indica la direcció a seguir dins del contenidor*/
+	-webkit-justify-content: space-around; /**M - EDITAT**/
+	justify-content: space-around; /**M - EDITAT**/
+	}
+	
+
+/*fi contenidor principal*/
+/*contenidor secundari*/
+.bottom-sectionQ{
+	background-color: white;
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/ /**M - EDITAT**/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/ /**M - EDITAT**/
+	-webkit-flex-direction: column; /**M - EDITAT**/
+	flex-direction: column; /*Indica la direcció a seguir dins del contenidor*/ /**M - EDITAT**/
+	-webkit-justify-content: space-between; /**M - EDITAT**/
+	justify-content: space-between; /**M - EDITAT**/
+	-webkit-flex: 1 1 40%; /*espai que ocupa dins del contenidor pare*/
+    flex: 1 1 40%;
+	font-family: 'brutal'; /**M - EDITAT**/
+	margin:13vh;
+	}
+	
+.bottom-articleQ{
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/ /**M - EDITAT**/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/ /**M - EDITAT**/
+	-webkit-flex-direction: column; /**M - EDITAT**/
+	flex-direction: column; /*Indica la direcció a seguir dins del contenidor*/ /**M - EDITAT**/
+	-webkit-justify-content: space-between; /**M - EDITAT**/
+	justify-content: space-between; /**M - EDITAT**/
+	padding-bottom: 5vh; /**M - EDITAT**/
+}
+
+label {
+	font-variant: small-caps;
+	font-size:2em;
+}
+
+
+.bottom-articleQ1 > p{ /**M - EDITAT**/
+	font-size: 15px;
+	margin: 2vh 2vh 2vh 2vh;
+    line-height:5vh;
+	padding:1.5vh;
+}	
+
+
+#nav_formQ {
+	padding-top:2%;
+	font-family: 'brutal';
+	color:white;
+	font-weight:bold;
+	font-size:1em;
+}
+
+#nav_first_lineQ {
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-flex-flow: row; /*Fluxe dels elements del contenidor */
+	flex-flow: row; /* Es defineix la direcció dels elements */
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+#nav_second_lineQ{
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-flex-flow: row; /*Fluxe dels elements del contenidor */
+	flex-flow: row; /* Es defineix la direcció dels elements */
+	-webkit-justify-content: space-around; /*Propietat que indica que es deixi espai entre els elements*/
+	justify-content: space-around;
+}
+
+label {
+	padding-bottom:2%;
+	margin-left:3%;
+}
+
+.int4{
+	padding:20px;
+ }
+ 
+.int2{
+	padding-top:10px;
+ }
+
+.Q {
+	padding:1%;
+}
+.Q {
+	position:relative;
+	top:0;padding:4px;
+    transition: all .2s ease-in-out
+}
+
+.Q:hover{top:-4px;box-shadow:0 4px 3px #999; background: none;}
+
+
+
+.main {
+	min-height: 500px;
+	display: -webkit-flex;
+	display: flex; /*Indicar la propietat flex, ja que contindrà elements fills flexibles*/
+	-webkit-flex-flow: row; /* Els elements es mostrarán en fila*/
+	flex-flow: row;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+aside {
+	background-color:white;
+	display: -webkit-flex;
+	display:flex; /*Propietat flex*/
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	-webkit-flex: 1 6 15%; /*espai que ocupa dins del contenidor pare*/
+    flex: 1 6 15%;
+	padding: 4%;
+}
+
+#asideItem {
+	margin: 4vh;
+}
+
+#asideItem1 {
+	margin: 10vh 4vh 4vh 4vh;
+}
+
+/*Caracteristiques dels elements que conté l'aside*/
+p {
+	text-justify: center;
+	text-align: justify;
+	line-height: 4vh;
+}
+
+#nombre, #email1, #ciudad, #color, #color1, #color2, #pregunta {
+	font-size: 1em;
+	background-color: white;
+	padding: 6px 10px;
+	width: 100%;
+	margin: 1%;
+}
+
+h3{
+	font-variant: small-caps;
+	font-size: 2em;
+	text-align: justify;
+	margin-bottom: 2%;
+}
+
+.boton {
+	background-color:#f7c805;
+	color: black;
+	display: block;
+	margin-top:10px;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
+	font-size: 1em;
+	text-decoration:none;
+	padding:10px 12px;
+	text-align: center;
+	border: 0.7vh solid black;
+	float: right;
+}
+
+.boton:hover {
+	background-color:#434343;
+}

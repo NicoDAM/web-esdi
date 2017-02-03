@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Declaració de les fonts utilitzades, ubicades a la carpeta fonts*/
+@font-face { 
+    font-family: 'brutal';
+    src: url('../fonts/BrutalType.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quick';
+    src: url('../fonts/Quicksand-Bold.otf') format('opentype');
+	font-weight: normal;
+    font-style: bold;
+}
+
+/*Reset*/
+*{
+	margin: 0vh;
+	padding: 0vh;
+}
+
+/* start */
+
+body{
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/  /**M - EDITAT**/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/ /**M - EDITAT**/
+	-webkit-flex-direction: column; /**M - EDITAT**/
+	flex-direction: column; /*Indica la direcció a seguir dins del contenidor*/ /**M - EDITAT**/
+	font-family: brutal; /**M - EDITAT**/
+	}
+
+/* header fixe a dalt de la pagina i superposat al contenidor central*/
+#header{
+	background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 100;
+	opacity:0; /*opacitat regulada amb jquery*/
+	/*justify-content: space-between; - M
+	display: flex;*/
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/  /**M - EDITAT**/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/  /**M - EDITAT**/
+	-webkit-flex-direction: row;  /**M - EDITAT**/
+	flex-direction: row; /*Indica la direcció a seguir dins del contenidor*/  /**M - EDITAT**/
+	-webkit-justify-content: space-between; /*Propietat que indica que es deixi espai entre els elements*/ /**M - EDITAT**/
+	justify-content: space-between; /**M - EDITAT**/
+	border-bottom: 0.2vh solid #000000;
+}
+
+.header-left, .header-right {
+	padding: 0.5vh;
+}
+
+.logo {
+	width: 45%;
+	margin-top: 0.5vh;
+	margin-left: 8vh;
+}
+
+#bill{
+	color: black;
+}
+
+.nav_head {
+	width:50vh;
+	height:5vh;
+	margin-top:2vh;
+	text-align: right;
+	-webkit-align-self: center;
+	align-self: center;
+	margin-right: 2vh;
+}
+
+header nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 1em;
+	text-align: left;
+	margin-right: 5vh;
+	letter-spacing: 0.2vh;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: #2C9AB7;
+}
+
+/*fi header*/
+/*contenidor principal video-nav*/
+.main-container{
+	background-color: black;
+/*	background-color: #f7c805; #Millor el fons black, aixo evita que al carregar la pagina no surti un centelleig groc*/ 
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/
+	-webkit-flex-direction: column;
+	flex-direction: column; /*Indica la direcció a seguir dins del contenidor*/
+}
+	
+#myvideo{
+
+	}
+
+/*fi contenidor principal*/
+/*contenidor secundari*/
+.bottom-section{
+	background-color: #f7c805;
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/ /**M - EDITAT**/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/ /**M - EDITAT**/
+	-webkit-flex-direction: row; /**M - EDITAT**/
+	flex-direction: row; /*Indica la direcció a seguir dins del contenidor*/ /**M - EDITAT**/
+	-webkit-justify-content: space-between; /**M - EDITAT**/
+	justify-content: space-between; /**M - EDITAT**/
+/*	padding-bottom: 5vh; /**M - EDITAT**/
+	font-family: 'brutal'; /**M - EDITAT**/
+
+}
+	
+.bottom-article{
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/ /**M - EDITAT**/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/ /**M - EDITAT**/
+	-webkit-flex-direction: column; /**M - EDITAT**/
+	flex-direction: column; /*Indica la direcció a seguir dins del contenidor*/ /**M - EDITAT**/
+	margin: 5vh; /**M - EDITAT**/
+	margin-top: 4vh;
+}
+
+.title1 { /**M - EDITAT**/
+	font-size: 24px;
+	text-align: center;
+	margin-right:10vh;
+	margin-left:10vh;
+	margin-bottom: 2vh;
+}
+
+.title2 { /**M - EDITAT**/
+	font-size: 24px;
+	text-align: center;
+	margin-right:10vh;
+	margin-left:10vh;
+	margin-top:4vh;
+	margin-bottom: 2vh;
+}
+
+.title3 { /**M - EDITAT**/
+	font-size: 24px;
+	text-align: center;
+	margin-right:10vh;
+	margin-left:10vh;
+	margin-top:4vh;
+	margin-bottom: 2vh;
+}
+
+.bottom-article > p{ /**M - EDITAT**/
+	font-size: 15px;
+	margin: 0vh 2vh 0vh 2vh;
+	text-align: justify;
+}	
+
+.bottom-section2{ /**M - EDITAT**/
+	background-color: #f7c805;
+	/*padding-bottom: 10vh; */
+	padding-bottom: 3vh;
+	font-family: 'brutal'; 
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-flex-flow: row; /*Fluxe dels elements del contenidor */
+	flex-flow: row; /* Es defineix la direcció dels elements */
+	-webkit-justify-content: space-around; /*Propietat que indica que es deixi espai entre els elements*/
+	justify-content: space-space-around;
+}
+
+/*fi contenidor secundari*/	
+
+/*footer*/
+footer{
+	font-family: 'brutal';
+	background-color: black;
+	/*display: flex; - M
+	flex-direction: column; */
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/ /**M - EDITAT**/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/ /**M - EDITAT**/
+	-webkit-flex-direction: column; /**M - EDITAT**/
+	flex-direction: column; /*Indica la direcció a seguir dins del contenidor*/ /**M - EDITAT**/
+	color: white;
+}
+	
+#top-footer{
+	display: -webkit-flex; /*Per a que siqui suportat per altres navegadors*/ /**M - EDITAT**/
+	display: flex; /* Propietat que defineix l'element com a contenidor flexible i converteix els seus fills en elements flexibles*/ /**M - EDITAT**/
+	-webkit-flex-direction: row; /**M - EDITAT**/
+	flex-direction: row; /*Indica la direcció a seguir dins del contenidor*/ /**M - EDITAT**/
+	-webkit-justify-content: space-between; /*Propietat que indica que es deixi espai entre els elements*/ /**M - EDITAT**/
+	justify-content: space-between; /**M - EDITAT**/
+}
+
+.left-footer { /**M - EDITAT**/
+	margin: 4vh;
+	margin-left: 8vh;
+}
+
+.left-footer>h3 { /**M - EDITAT**/
+	font-size: 24px;
+	font-variant: small-caps;
+	margin-bottom: 2vh;
+}
+
+.left-footer > p { /**M - EDITAT**/
+	margin-right: 20vh;
+	margin-bottom: 2vh;
+}
+
+.center-footer{ /**M - EDITAT**/
+	margin:3vh;
+	margin-right: 30vh;
+	padding-top:4vh;
+}
+
+.right-footer { /**M - EDITAT**/
+	margin: 4vh;
+}
+
+.right-footer >h3 { /**M - EDITAT**/
+	font-size: 24px;
+	font-variant: small-caps;
+	margin-bottom: 2vh;
+}
+
+.right-footer  > p { /**M - EDITAT**/
+	margin-bottom: 2vh;
+}
+
+
+#email { /**M - EDITAT**/
+	font-family: 'brutal';
+	font-size: 16px;
+	background-color: #eee;
+	color: #777;
+	padding: 0.5vh 0.5vh;
+}
+
+img.logo2 { /**M - EDITAT**/
+	width:100%;
+	margin-right: 0.5vh;
+}
+
+img.logo1 { /**M - EDITAT**/
+	width:8%;
+	padding: 1vh;
+}
+
+.left-footer>h3 > a {
+		font-size: 24px;
+	font-variant: small-caps;
+	margin-bottom: 2vh;
+	color:white;
+	text-decoration: none;
+}
+
+#copyright{
+	display: flex;
+	justify-content: center;
+	color: #f7c805;
+	background-color: black;
+}
+/*fi footer*/
